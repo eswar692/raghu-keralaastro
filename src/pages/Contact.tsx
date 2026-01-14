@@ -1,101 +1,121 @@
-import { MessageCircle, Phone } from "lucide-react"; // icons
+import { MessageCircle, Phone } from "lucide-react";
 import Form from "../Genaral/Form";
 import { phone_number, whatsapp_number } from "../Genaral/secret";
 
 export default function Contact() {
   return (
-    <div className="relative min-h-screen py-20 px-6 bg-gradient-to-br from-purple-900 via-red-900 to-orange-800 overflow-hidden">
-      {/* Background Overlay with Pattern */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-      ></div>
+    <section className="relative min-h-screen py-24 px-6 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-[#020024] to-[#020617]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(234,179,8,0.15),transparent_60%)]" />
 
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
-        <h2 className="text-5xl font-extrabold bg-gradient-to-r from-yellow-300 to-red-500 bg-clip-text text-transparent drop-shadow-md">
+      <div className="relative z-10 text-center max-w-3xl mx-auto mb-20">
+        <h2
+          className="
+            font-playfair font-bold
+            text-4xl md:text-6xl
+            bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500
+            bg-clip-text text-transparent
+          "
+        >
           Contact Us
         </h2>
-        <p className="text-gray-200 mt-6 text-lg leading-relaxed">
-          We’re here to guide you on your{" "}
-          <span className="font-medium text-yellow-300">spiritual journey</span>
-          . Connect via{" "}
-          <span className="font-medium text-yellow-300">WhatsApp</span>,{" "}
-          <span className="font-medium text-yellow-300">phone</span>, or fill
-          the form below. Guruji will respond personally.
+        <p className="mt-6 font-inter text-gray-300 text-base md:text-lg leading-relaxed">
+          Reach out for thoughtful astrology guidance and confidential
+          consultation. You may contact us via phone, WhatsApp, or submit the
+          form below.
         </p>
       </div>
 
-      {/* Contact Info & Form */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-stretch relative z-10">
+      {/* Contact Info + Form */}
+      <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
         {/* Contact Info */}
-        <div className="backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-10 flex flex-col justify-center text-white">
-          <h3 className="text-3xl font-semibold text-yellow-300 mb-6">
+        <div
+          className="
+          bg-white/5 backdrop-blur-xl
+          border border-white/10
+          rounded-3xl p-10
+          shadow-xl
+          text-gray-200
+        "
+        >
+          <h3 className="font-playfair text-2xl text-yellow-400 mb-6">
             Get in Touch
           </h3>
-          <p className="text-gray-200 mb-6 text-lg leading-relaxed">
-            Whether it’s{" "}
-            <span className="font-medium text-yellow-300">career</span>,{" "}
-            <span className="font-medium text-yellow-300">love life</span>, or{" "}
-            <span className="font-medium text-yellow-300">
-              spiritual growth
-            </span>
-            , we’re here to help you find direction.
+
+          <p className="font-inter text-sm md:text-base text-gray-300 leading-relaxed mb-8">
+            Whether your concern is related to relationships, career direction,
+            family matters, or personal clarity, guidance is offered with care,
+            discretion, and understanding.
           </p>
 
-          <div className="space-y-5 text-lg">
-            <p className="flex items-center gap-3">
-              <Phone className="w-6 h-6 text-yellow-300" />
-              <span>
-                <span className="font-semibold">Phone:</span> {phone_number}
+          <div className="space-y-6 font-inter text-sm md:text-base">
+            <a
+              href={`tel:${phone_number}`}
+              className="flex items-center gap-4 hover:text-amber-400 transition"
+            >
+              <span className="p-3 rounded-full bg-amber-500/10 text-amber-400">
+                <Phone className="w-5 h-5" />
               </span>
-            </p>
-            <p className="flex items-center gap-3">
-              <MessageCircle className="w-6 h-6 text-yellow-300" />
               <span>
-                <span className="font-semibold">WhatsApp:</span>{" "}
+                <span className="font-semibold text-gray-200">Phone:</span>{" "}
+                {phone_number}
+              </span>
+            </a>
+
+            <a
+              href={`https://wa.me/${whatsapp_number}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 hover:text-emerald-400 transition"
+            >
+              <span className="p-3 rounded-full bg-emerald-500/10 text-emerald-400">
+                <MessageCircle className="w-5 h-5" />
+              </span>
+              <span>
+                <span className="font-semibold text-gray-200">WhatsApp:</span>{" "}
                 {whatsapp_number}
               </span>
-            </p>
+            </a>
           </div>
         </div>
 
         {/* Form */}
-        <div className="bg-black/70  shadow-2xl rounded-3xl p-10 text-white">
-          <h3 className="text-3xl font-semibold text-white mb-6 w-full mx-auto text-center">
-            Book Now
+        <div
+          className="
+          bg-black/60 backdrop-blur-xl
+          border border-white/10
+          rounded-3xl p-10
+          shadow-xl
+          text-white
+        "
+        >
+          <h3 className="font-playfair text-2xl text-center text-yellow-400 mb-8">
+            Request a Consultation
           </h3>
           <Form />
         </div>
       </div>
 
-      {/* Services Section */}
-      <div className="mt-20 max-w-5xl mx-auto text-center relative z-10">
-        <h3 className="text-4xl font-bold bg-gradient-to-r from-yellow-300 to-red-500 bg-clip-text text-transparent drop-shadow-md">
-          Our Astrology Services
+      {/* Services Summary */}
+      <div className="relative z-10 mt-24 max-w-4xl mx-auto text-center">
+        <h3
+          className="
+            font-playfair font-bold
+            text-3xl md:text-4xl
+            bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500
+            bg-clip-text text-transparent
+          "
+        >
+          Areas of Guidance
         </h3>
-        <p className="text-gray-200 mt-6 text-lg leading-relaxed">
-          Expert in{" "}
-          <span className="font-medium text-yellow-300">palm reading</span>,{" "}
-          <span className="font-medium text-yellow-300">
-            horoscope matching
-          </span>
-          , <span className="font-medium text-yellow-300">photo readings</span>,
-          and{" "}
-          <span className="font-medium text-yellow-300">
-            vastu consultation
-          </span>
-          . Life-changing solutions for{" "}
-          <span className="italic text-orange-200">
-            love, career, finance, and spiritual growth
-          </span>{" "}
-          with our trusted astrology services.
+        <p className="mt-6 font-inter text-gray-300 text-base leading-relaxed">
+          Astrology consultations may include palm reading, horoscope insights,
+          compatibility guidance, vastu advice, and personalized spiritual
+          consultation focused on clarity and balanced decision-making.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,8 +1,10 @@
-export const phone_number = "+919731488565";
-export const whatsapp_number = "919731488565";
+export const phone_number = "+916363600791";
+export const whatsapp_number = "+916363600791";
+export const phone_number2 = "+917676384744";
+export const whatsapp_number2 = "+917676384744";
 
-export const business_name = "Famous Vashikaran Specialist";
-export const person_name = "Pandith Raghavendra Prasad";
+export const business_name = "Kerala Astro Center";
+export const person_name = "Pandith Raghunandan Poduval";
 
 export const email_address = "";
 

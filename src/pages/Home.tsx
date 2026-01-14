@@ -25,7 +25,7 @@ const Home = () => {
 "
     >
       <Carousel />
-      <AllReligion />
+      {/* <AllReligion /> */}
       <VashikaranGrid />
       <ImageGrid />
       <CardCarousel />
@@ -47,17 +47,17 @@ const Problems = () => {
   const problems = [
     {
       title: "Lost Love Back",
-      desc: "Available on both WhatsApp and Call. One call can change your life.",
+      desc: "Available via WhatsApp & Call. Speak directly for guidance and clarity.",
       img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
     },
     {
       title: "Marriage Problem Solution",
-      desc: "Solve disputes and misunderstandings with astrology guidance.",
+      desc: "Astrology-based guidance to resolve disputes and restore harmony.",
       img: "https://i.pinimg.com/1200x/65/b5/7a/65b57ad4bc6f7bc20fcbd8ea7bfe3191.jpg",
     },
     {
       title: "Vashikaran Specialist",
-      desc: "Attract your desired partner with trusted vashikaran solutions.",
+      desc: "Traditional spiritual consultation focused on relationship balance.",
       img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
     },
   ];
@@ -65,53 +65,94 @@ const Problems = () => {
   const reverseProblems = [...problems].reverse();
 
   return (
-    <motion.div
-      className="grid md:grid-cols-3 gap-10 w-full py-16 px-6 bg-gradient-to-br from-purple-50 via-rose-50 to-fuchsia-100"
-      initial={{ opacity: 0, y: 50 }}
+    <motion.section
+      className="
+        relative w-full py-24 px-6
+        bg-gradient-to-b from-[#020617] via-[#020024] to-[#020617]
+        overflow-hidden
+      "
+      initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      {reverseProblems.map((problem, index) => (
-        <motion.div
-          key={index}
-          className="flex flex-col items-center bg-white/80 backdrop-blur-xl rounded-3xl border border-pink-200/60 shadow-xl hover:shadow-2xl hover:shadow-pink-400/50 overflow-hidden transition-transform hover:scale-105"
-          whileHover={{ y: -10 }}
-        >
-          {/* Image */}
-          <div className="relative w-full h-72 overflow-hidden">
-            <img
-              src={problem.img}
-              alt={problem.title}
-              className="h-full w-full object-cover transform hover:scale-110 transition duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          </div>
+      {/* Glow overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(236,72,153,0.25),transparent_60%)]" />
 
-          {/* Text */}
-          <div className="p-6 flex flex-col items-center text-center">
-            <h3 className="text-2xl font-extrabold bg-gradient-to-r from-fuchsia-600 via-pink-600 to-purple-700 bg-clip-text text-transparent montserrat mb-3 drop-shadow-sm">
-              {problem.title}
-            </h3>
-            <p className="text-gray-700 text-sm poppins leading-relaxed">
-              {problem.desc}
-            </p>
-          </div>
-
-          {/* Button */}
-          <a
-            href={`https://wa.me/${whatsapp_number}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-6"
+      <div className="relative z-10 grid md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        {reverseProblems.map((problem, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ y: -12 }}
+            className="
+              group rounded-3xl overflow-hidden
+              bg-gradient-to-br from-fuchsia-600 via-rose-500 to-purple-700
+              p-[2px] shadow-2xl
+              hover:shadow-fuchsia-500/50
+              transition-all
+            "
           >
-            <button className="flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-white shadow-lg bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 hover:shadow-lg hover:shadow-pink-400/70 hover:scale-105 transition">
-              <Phone className="w-4 h-4" />
-              Online Chat
-            </button>
-          </a>
-        </motion.div>
-      ))}
-    </motion.div>
+            {/* Inner Card */}
+            <div className="bg-black/80 backdrop-blur-xl rounded-3xl h-full flex flex-col">
+              {/* Image */}
+              <div className="relative h-72 overflow-hidden">
+                <img
+                  src={problem.img}
+                  alt={problem.title}
+                  className="
+                    w-full h-full object-cover
+                    group-hover:scale-110
+                    transition-transform duration-700
+                  "
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col items-center text-center flex-grow">
+                <h3
+                  className="
+                    text-2xl font-extrabold mb-3
+                    bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-400
+                    bg-clip-text text-transparent
+                    montserrat
+                  "
+                >
+                  {problem.title}
+                </h3>
+
+                <p className="text-gray-300 text-sm leading-relaxed poppins">
+                  {problem.desc}
+                </p>
+              </div>
+
+              {/* CTA */}
+              <div className="pb-6 flex justify-center">
+                <a
+                  href={`https://wa.me/${whatsapp_number}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className="
+                      flex items-center gap-2
+                      px-8 py-3 rounded-full
+                      font-semibold text-white
+                      bg-gradient-to-r from-pink-500 via-rose-500 to-fuchsia-600
+                      shadow-lg shadow-pink-500/40
+                      hover:scale-105 hover:shadow-pink-500/70
+                      transition-all
+                    "
+                  >
+                    <Phone className="w-4 h-4" />
+                    Online Chat
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
   );
 };
 
