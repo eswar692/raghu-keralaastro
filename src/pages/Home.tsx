@@ -1,11 +1,4 @@
-import {
-  Briefcase,
-  Heart,
-  Phone,
-  Scale,
-  Users,
-  MessageCircle,
-} from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import Carousel from "../Genaral/Carousel";
 import { motion } from "framer-motion";
 import Testimonials from "../Genaral/Testimonial";
@@ -482,82 +475,82 @@ const AstrologyServicesModern = () => {
   );
 };
 
-const AllServicesModern = () => {
-  const services = [
-    {
-      title: "Ex Love Back",
-      icon: Heart,
-      desc: "Astrological remedies to bring your ex back with love & trust.",
-    },
-    {
-      title: "Court Case Solution",
-      icon: Scale,
-      desc: "Effective solutions for legal & court-related issues.",
-    },
-    {
-      title: "Family Problem",
-      icon: Users,
-      desc: "Resolve disputes & bring peace at home with astrology.",
-    },
-    {
-      title: "Business Problem",
-      icon: Briefcase,
-      desc: "Boost your career & business success with remedies.",
-    },
-    {
-      title: "Childless Couple",
-      icon: Users,
-      desc: "Astrological remedies to bless couples with children.",
-    },
-  ];
-  return (
-    <div className="relative bg-gradient-to-tr from-rose-100 via-amber-50 to-orange-100 py-20 px-6 overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+// const AllServicesModern = () => {
+//   const services = [
+//     {
+//       title: "Ex Love Back",
+//       icon: Heart,
+//       desc: "Astrological remedies to bring your ex back with love & trust.",
+//     },
+//     {
+//       title: "Court Case Solution",
+//       icon: Scale,
+//       desc: "Effective solutions for legal & court-related issues.",
+//     },
+//     {
+//       title: "Family Problem",
+//       icon: Users,
+//       desc: "Resolve disputes & bring peace at home with astrology.",
+//     },
+//     {
+//       title: "Business Problem",
+//       icon: Briefcase,
+//       desc: "Boost your career & business success with remedies.",
+//     },
+//     {
+//       title: "Childless Couple",
+//       icon: Users,
+//       desc: "Astrological remedies to bless couples with children.",
+//     },
+//   ];
+//   return (
+//     <div className="relative bg-gradient-to-tr from-rose-100 via-amber-50 to-orange-100 py-20 px-6 overflow-hidden">
+//       {/* Background Decoration */}
+//       <div className="absolute top-0 left-0 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+//       <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
 
-      <div className="relative max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-pink-600 to-orange-500 mb-14 drop-shadow-lg">
-          🔮 Explore Our Astrology Services 🔮
-        </h2>
+//       <div className="relative max-w-7xl mx-auto text-center">
+//         <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-pink-600 to-orange-500 mb-14 drop-shadow-lg">
+//           🔮 Explore Our Astrology Services 🔮
+//         </h2>
 
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, id) => (
-            <div
-              key={id}
-              className="group bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl p-8 border border-rose-100 hover:bg-white/90 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300"
-            >
-              {/* Icon or Image */}
-              <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-10 h-10 text-white" />
-                </div>
-              </div>
+//         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+//           {services.map((service, id) => (
+//             <div
+//               key={id}
+//               className="group bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl p-8 border border-rose-100 hover:bg-white/90 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300"
+//             >
+//               {/* Icon or Image */}
+//               <div className="flex justify-center mb-6">
+//                 <div className="w-20 h-20 rounded-full bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+//                   <service.icon className="w-10 h-10 text-white" />
+//                 </div>
+//               </div>
 
-              {/* Title */}
-              <h3 className="text-2xl font-bold text-gray-800 mb-4 montserrat group-hover:text-red-600 transition-colors">
-                {service.title}
-              </h3>
+//               {/* Title */}
+//               <h3 className="text-2xl font-bold text-gray-800 mb-4 montserrat group-hover:text-red-600 transition-colors">
+//                 {service.title}
+//               </h3>
 
-              {/* Description */}
-              <p className="text-gray-600 mb-8 leading-relaxed open-sans">
-                {service.desc}
-              </p>
+//               {/* Description */}
+//               <p className="text-gray-600 mb-8 leading-relaxed open-sans">
+//                 {service.desc}
+//               </p>
 
-              {/* Button */}
-              <a href={`tel:${phone_number}`}>
-                <button className="roboto flex items-center justify-center gap-2 w-full bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-red-400/50 hover:scale-105 transition-all">
-                  <Phone className="w-5 h-5" />
-                  Call Now
-                </button>
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+//               {/* Button */}
+//               <a href={`tel:${phone_number}`}>
+//                 <button className="roboto flex items-center justify-center gap-2 w-full bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-red-400/50 hover:scale-105 transition-all">
+//                   <Phone className="w-5 h-5" />
+//                   Call Now
+//                 </button>
+//               </a>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 function HomeLastDesign() {
   return (
