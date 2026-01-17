@@ -2,12 +2,7 @@ import { Heart, MenuIcon, ShieldCheck, Sparkles, X } from "lucide-react";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-import {
-  business_name,
-  person_name,
-  phone_number,
-  phone_number2,
-} from "./secret";
+import { business_name, person_name, phone_number } from "./secret";
 
 const Header = () => {
   return (

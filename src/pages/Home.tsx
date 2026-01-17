@@ -12,7 +12,6 @@ import Testimonials from "../Genaral/Testimonial";
 import FAQ from "../Genaral/FAQ";
 import CardCarousel from "../Genaral/CardsCarousel";
 import ImageGrid from "../Genaral/ImageGrid";
-import AllReligion from "../Genaral/AllReligion";
 import { person_name, phone_number, whatsapp_number } from "../Genaral/secret";
 import VashikaranGrid from "../Genaral/VashikaranGrid";
 
