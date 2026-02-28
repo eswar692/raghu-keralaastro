@@ -1,4 +1,3 @@
-import ImageGrid from "../Genaral/ImageGrid";
 import { person_name } from "../Genaral/secret";
 
 export default function About() {
