@@ -65,7 +65,6 @@ export default function Footer() {
           <p className="font-inter text-gray-300 text-sm mb-2">
             📞 {phone_number}
           </p>
-
           <p className="text-xs uppercase tracking-widest text-amber-300">
             Trusted • Confidential • Supportive
           </p>
@@ -111,20 +110,25 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-white/10 bg-black/70">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Credit */}
-          {/* <a
-            href="https://wa.me/918886921826"
-            className="text-sm font-inter text-gray-400 hover:text-amber-400 transition"
-          >
-            Designed & Developed by{" "}
-            <span className="font-semibold">Prasad</span>{" "}
-          </a> */}
+          {/* Legal Links */}
+          <div className="flex items-center gap-4 text-xs font-inter text-gray-400">
+            <a
+              href="/privacy-policy"
+              className="hover:text-amber-400 transition"
+            >
+              Privacy Policy
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="/terms" className="hover:text-amber-400 transition">
+              Terms & Conditions
+            </a>
+          </div>
 
           {/* Copyright */}
           <p className="text-xs font-inter text-gray-500">
             © {new Date().getFullYear()}{" "}
             <a
-              href="https://famousvashikaran.in/"
+              href="https://keralaastro.in/"
               target="_blank"
               className="hover:text-amber-400 transition"
             >
@@ -137,41 +141,3 @@ export default function Footer() {
     </motion.footer>
   );
 }
-
-// const CopyRightAndContact = () => {
-//   return (
-//     <div className="py-2 z-30 bg-gradient-to-r from-red-700 to-orange-600 text-white absolute bottom-0 left-0 right-0">
-//       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-//         {/* Left Column */}
-//         <div className="mb-4 md:mb-0 text-center md:text-left flex gap-2">
-//           <p className="font-montserrat text-xl montserrat font-semibold mt-2">
-//             Designed and Developed By Eswar
-//           </p>
-//           <a
-//             href="https://wa.me/918886921826?text=Hello%20Pro%20Daddy%20Agency"
-//             className="text-lg font-bold font-roboto hover:underline hover:text-yellow-300 transition"
-//           >
-//             <button className=" text-black bg-white   py-2 px-4 rounded text-sm">
-//               Pro Daddy Agency
-//             </button>
-//           </a>
-//         </div>
-
-//         {/* Right Column */}
-//         <div className="text-center md:text-right poppins text-md">
-//           <p className=" font-montserrat montserrat">
-//             © {new Date().getFullYear()}{" "}
-//             <a
-//               href="https://famousvashikaran.in/"
-//               target="_blank"
-//               className="font-semibold hover:text-yellow-300 transition"
-//             >
-//               www.famousvashikaran.in
-//             </a>{" "}
-//             – All Rights Reserved.
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
