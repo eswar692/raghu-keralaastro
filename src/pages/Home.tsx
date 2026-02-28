@@ -38,7 +38,7 @@ export default Home;
 const Problems = () => {
   const problems = [
     {
-      title: "Lost Love Back",
+      title: "Relationship Clarity Consultation",
       desc: "Available via WhatsApp & Call. Speak directly for guidance and clarity.",
       img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
     },
@@ -48,9 +48,9 @@ const Problems = () => {
       img: "https://i.pinimg.com/1200x/65/b5/7a/65b57ad4bc6f7bc20fcbd8ea7bfe3191.jpg",
     },
     {
-      title: "Vashikaran Specialist",
+      title: "Vedic Astrology Consultation",
       desc: "Traditional spiritual consultation focused on relationship balance.",
-      img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
+      img: "https://i.pinimg.com/736x/b6/fe/9b/b6fe9bc8d9d79cfb803b4d128c3ac1d2.jpg",
     },
   ];
 
@@ -213,7 +213,7 @@ const AboutAstrologer = () => {
           "
           >
             <img
-              src="https://i.pinimg.com/736x/ea/1d/12/ea1d121d1a00aec32b93a79d6bb72ae8.jpg"
+              src="https://i.pinimg.com/736x/7c/90/49/7c9049ee51aa7d8c0250e6b4e0bd83da.jpg"
               alt="Astrologer"
               className="
                 w-full h-full object-cover
@@ -364,20 +364,20 @@ const AstrologyServices = () => {
 const AstrologyServicesModern = () => {
   const services = [
     {
-      title: "World Famous Vashikaran Specialist",
-      img: "https://i.pinimg.com/736x/f4/dd/70/f4dd70b40b2060a6e0c9f81c5da1d137.jpg",
+      title: "Vedic Astrology Specialist",
+      img: "https://i.pinimg.com/736x/b6/fe/9b/b6fe9bc8d9d79cfb803b4d128c3ac1d2.jpg",
     },
     {
       title: "Marriage Problems Specialist",
-      img: "https://astrologerdeepaksharma.in/images/s2.png",
+      img: "https://i.pinimg.com/1200x/ae/f4/5e/aef45e9e21eba13ec022dc3370533d62.jpg",
     },
     {
-      title: "Husband & Wife Dispute",
-      img: "https://astrologerdeepaksharma.in/images/s1.png",
+      title: "Husband & Wife Harmony",
+      img: "https://i.pinimg.com/736x/b7/f6/31/b7f63119321b2d4e298fc8433955b27a.jpg",
     },
     {
-      title: "Ex Love Back Guidance",
-      img: "https://astrologerdeepaksharma.in/images/s3.png",
+      title: "Relationship Reconciliation",
+      img: "https://i.pinimg.com/736x/44/07/55/440755942800407c7edb056ea75fd50c.jpg",
     },
   ];
 

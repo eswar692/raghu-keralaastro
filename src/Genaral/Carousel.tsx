@@ -6,43 +6,23 @@ import { person_name } from "./secret";
 export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start", skipSnaps: false },
-    []
+    [],
   );
 
-  const [_autoplay, setAutoplay] = useState<NodeJS.Timer | null>(null);
+  const [_autoplay, setAutoplay] = useState<any>(null);
 
   const slides = [
     {
       id: 1,
-      img: "https://i.pinimg.com/1200x/3c/92/92/3c929254c1a0f88ef3ad9808780ffb46.jpg",
+      img: "https://i.pinimg.com/736x/41/20/ea/4120ea8a5c82715a396fef96382c921d.jpg",
     },
     {
       id: 2,
-      img: "https://i.pinimg.com/1200x/f1/eb/07/f1eb072e9930bb22bf9afc53fd9faf89.jpg",
+      img: "https://i.pinimg.com/1200x/3d/ef/55/3def558579612a517065a7c48310e918.jpg",
     },
     {
       id: 3,
-      img: "https://i.pinimg.com/1200x/f1/8e/c5/f18ec5f77c36d2bd82804180365c7608.jpg",
-    },
-    {
-      id: 4,
-      img: "https://i.pinimg.com/736x/8d/95/ff/8d95fff806cac0d2308fcd7e60d4dab2.jpg",
-    },
-    {
-      id: 5,
-      img: "https://i.pinimg.com/1200x/fc/b1/54/fcb154019b1609ca4b057958eb44548d.jpg",
-    },
-    {
-      id: 6,
-      img: "https://i.pinimg.com/736x/0b/ea/85/0bea85319c7aad2be9a17715c0726a20.jpg",
-    },
-    {
-      id: 7,
-      img: "https://i.pinimg.com/736x/34/1d/eb/341deb4d9ba9bd2934f0d996567b37a3.jpg",
-    },
-    {
-      id: 8,
-      img: "https://i.pinimg.com/736x/e5/15/02/e51502ea14aa82845d23f7cefe17e766.jpg",
+      img: "https://i.pinimg.com/1200x/3d/ef/55/3def558579612a517065a7c48310e918.jpg",
     },
   ];
 
@@ -87,27 +67,28 @@ export default function Carousel() {
               />
 
               {/* Overlay Content Center */}
+              {/* Overlay Content Center */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/60">
                 <div className="text-center max-w-4xl px-6">
-                  {/* Title */}
+                  {/* ✅ FIXED — Vashikaran removed */}
                   <h2 className="text-5xl md:text-7xl font-extrabold montserrat text-yellow-300 drop-shadow-lg mb-4">
-                    Famous Vashikaran
+                    Trusted Vedic Astrologer
                   </h2>
 
-                  {/* Pandit Name */}
+                  {/* Pandit Name — unchanged, already fine */}
                   <h3 className="text-3xl md:text-5xl font-bold montserrat text-pink-400 mb-6 drop-shadow-md">
                     Pandit <span className="text-white">{person_name}</span>
                   </h3>
 
-                  {/* Descriptions */}
+                  {/* ✅ FIXED — removed "Vashikaran" and "result-oriented" */}
                   <p className="text-lg md:text-2xl text-gray-100 poppins leading-relaxed mb-3">
-                    Powerful Vashikaran remedies to restore love, attract
+                    Traditional astrology guidance to restore love, attract
                     harmony, and solve complex life challenges with trusted
-                    guidance.
+                    consultation.
                   </p>
                   <p className="text-lg md:text-2xl text-gray-100 poppins leading-relaxed">
                     Decades of experience helping people worldwide with safe,
-                    ethical, and result-oriented astrology solutions.
+                    ethical, and spiritually grounded astrology solutions.
                   </p>
                 </div>
               </div>

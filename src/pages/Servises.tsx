@@ -13,9 +13,10 @@ const services = [
     img: "https://i.pinimg.com/736x/fa/ee/46/faee46287149c9a2470c20d26318fee1.jpg",
   },
   {
-    name: "All Types of Vashikaran",
+    // ✅ FIXED
+    name: "Vedic Spiritual Consultation",
     desc: "Traditional spiritual practices focused on positive influence and harmony.",
-    img: "https://i.pinimg.com/736x/34/1d/eb/341deb4d9ba9bd2934f0d996567b37a3.jpg",
+    img: "https://i.pinimg.com/736x/3b/11/5b/3b115b361d84a05cd8476628f303d621.jpg",
   },
   {
     name: "Career Growth",
@@ -43,9 +44,10 @@ const services = [
     img: "https://i.pinimg.com/1200x/40/6d/94/406d941b9978384bd9008b1f81c613a3.jpg",
   },
   {
-    name: "Vashikaran",
+    // ✅ FIXED
+    name: "Relationship Harmony Rituals",
     desc: "Focused spiritual rituals aimed at restoring balance and confidence.",
-    img: "https://i.pinimg.com/1200x/bd/dc/94/bddc94a7fcefc3598976dec33665645a.jpg",
+    img: "https://i.pinimg.com/736x/29/33/52/293352f5c1a543ac609caa6544329af2.jpg",
   },
 ];
 

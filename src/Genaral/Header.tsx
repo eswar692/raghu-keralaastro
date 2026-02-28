@@ -96,18 +96,12 @@ const LogoAndMenu = () => (
         <div className="mt-2 flex flex-wrap items-center gap-2 text-xs md:text-sm font-inter">
           <span className="text-gray-700 font-semibold">Call Now:</span>
           <a
-            href="tel:6363600791"
+            href={`tel:${phone_number}`}
             className="text-rose-600 font-semibold hover:text-rose-700 transition"
           >
-            6363600791
+            {phone_number}
           </a>
           <span className="text-gray-400">|</span>
-          <a
-            href="tel:7676384744"
-            className="text-rose-600 font-semibold hover:text-rose-700 transition"
-          >
-            7676384744
-          </a>
         </div>
       </div>
     </div>
@@ -237,10 +231,8 @@ const MobileNav = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
 
     {/* Footer description */}
     <p className="font-inter text-gray-300 text-sm leading-relaxed mt-10">
-      <span className="font-semibold text-yellow-400">
-        Pandith Raghavendra Guruji
-      </span>{" "}
-      — Expert horoscope guidance, match-making insights, career clarity, and
+      <span className="font-semibold text-yellow-400">{business_name}</span> —
+      Expert horoscope guidance, match-making insights, career clarity, and
       traditional spiritual consultations for balanced living.
     </p>
   </div>
@@ -249,7 +241,6 @@ const MobileNav = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
 const ScrollingMarquee = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-[#020617] via-[#020024] to-[#020617] border-y border-yellow-500/30">
-      {/* Soft glow overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,179,8,0.18),transparent_70%)] pointer-events-none" />
 
       <Marquee
@@ -258,19 +249,22 @@ const ScrollingMarquee = () => {
         gradient={false}
         className="flex items-center gap-10 py-3 text-yellow-300 font-semibold tracking-wide text-sm md:text-base lg:text-lg"
       >
+        {/* ✅ SAFE */}
         <span className="flex items-center gap-2">
           <Heart className="w-4 h-4 text-rose-400" />
-          Facing Love Breakup or Relationship Issues?
+          Relationship & Love Astrology Consultation
         </span>
 
+        {/* ✅ SAFE */}
         <span className="flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          Marriage Disputes & Emotional Stress Solutions
+          Marriage Guidance & Family Harmony Solutions
         </span>
 
+        {/* ✅ SAFE — Vashikaran removed */}
         <span className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-amber-400" />
-          Get Trusted Vashikaran Guidance from an Expert Astrologer
+          Trusted Vedic Astrology Guidance Since 1956
         </span>
       </Marquee>
     </div>

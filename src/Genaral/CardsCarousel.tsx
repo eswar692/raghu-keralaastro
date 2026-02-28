@@ -12,16 +12,16 @@ const CardCarousel = () => {
       align: "center",
       dragFree: true,
     },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [Autoplay({ delay: 5000, stopOnInteraction: false })],
   );
 
   const scrollPrev = useCallback(
     () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
+    [emblaApi],
   );
   const scrollNext = useCallback(
     () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
+    [emblaApi],
   );
 
   const cards = [
@@ -33,7 +33,7 @@ const CardCarousel = () => {
     {
       title: "Psychic & Horoscope Reading",
       desc: "Gain clarity through traditional horoscope and intuitive readings focused on life direction and decision-making.",
-      img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
+      img: "https://i.pinimg.com/736x/e0/51/25/e051252c71522e45e2ccc010b4df5c9e.jpg",
     },
     {
       title: "Business & Financial Guidance",

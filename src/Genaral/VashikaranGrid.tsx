@@ -5,64 +5,64 @@ import { phone_number, whatsapp_number } from "./secret";
 export default function VashikaranGrid() {
   const items = [
     {
-      title: "Sthri Vashikaran",
+      title: "Stri Relationship Astrology",
       img: "https://i.pinimg.com/736x/b7/b4/f0/b7b4f0be7f149bd13a3717bf894b4441.jpg",
-      desc: "Traditional guidance focused on relationship balance and emotional understanding.",
+      desc: "Traditional astrological guidance focused on relationship balance and emotional understanding.",
     },
     {
-      title: "Purush Vashikaran",
+      title: "Partner Harmony Consultation",
       img: "https://i.pinimg.com/1200x/3a/6d/2c/3a6d2c49a66ca4971d915430079bfaca.jpg",
-      desc: "Astrological consultation aimed at restoring harmony in partner relationships.",
+      desc: "Astrological consultation aimed at restoring harmony and trust in partner relationships.",
     },
     {
-      title: "Samboga Vashikaran",
+      title: "Emotional Bonding Guidance",
       img: "https://i.pinimg.com/736x/d6/81/00/d68100dde806c12c6ccef9458435a94b.jpg",
-      desc: "Guidance to strengthen emotional closeness and mutual understanding.",
+      desc: "Vedic astrology guidance to strengthen emotional closeness and mutual understanding.",
     },
     {
-      title: "Prema Vashikaran",
+      title: "Love & Relationship Astrology",
       img: "https://i.pinimg.com/1200x/65/d5/01/65d501e3d8df04fb41289e577b67b9da.jpg",
-      desc: "Supportive astrology practices for love-related clarity and reconciliation.",
+      desc: "Supportive astrology practices for love-related clarity and peaceful reconciliation.",
     },
     {
       title: "Marriage Guidance",
       img: "https://i.pinimg.com/1200x/65/b5/7a/65b57ad4bc6f7bc20fcbd8ea7bfe3191.jpg",
-      desc: "Consultation for marital understanding, family balance, and life decisions.",
+      desc: "Consultation for marital understanding, family balance, and important life decisions.",
     },
     {
       title: "Vastu Remedies",
       img: "https://i.pinimg.com/736x/d0/a8/b0/d0a8b0eac277064d1f698326f55f8abf.jpg",
-      desc: "Vastu-based guidance to support harmony in home and workplace.",
+      desc: "Vastu-based guidance to support harmony and positive energy in home and workplace.",
     },
     {
       title: "Career & Job Guidance",
       img: "https://i.pinimg.com/736x/35/47/48/354748471cbad482eccf036d1db1a86c.jpg",
-      desc: "Astrology insights for career planning and professional stability.",
+      desc: "Astrology insights for career planning, job stability, and professional growth.",
     },
     {
       title: "Family Harmony",
       img: "https://i.pinimg.com/736x/9a/ab/ac/9aabac56c514a27cbcc112b5fc220642.jpg",
-      desc: "Support for resolving family misunderstandings and restoring peace.",
+      desc: "Astrological support for resolving family misunderstandings and restoring lasting peace.",
     },
     {
-      title: "Breakup Recovery",
+      title: "Emotional Recovery Guidance",
       img: "https://i.pinimg.com/736x/f9/83/a2/f983a2bb11d4e8058f3d65aa178c13d4.jpg",
-      desc: "Guidance to move forward with clarity after emotional setbacks.",
+      desc: "Compassionate guidance to move forward with clarity and strength after emotional setbacks.",
     },
     {
-      title: "Protection & Negativity",
+      title: "Spiritual Protection & Peace",
       img: "https://i0.wp.com/www.royalperspectives.com/wp-content/uploads/2023/08/what-do-your-enemies-hate-about-you-the-most-2-354-1574696841-0_dblbig.jpg?fit=1200%2C797&ssl=1",
-      desc: "Ethical spiritual practices focused on emotional protection and peace.",
+      desc: "Ethical spiritual practices focused on emotional protection, inner peace, and positivity.",
     },
     {
-      title: "Couples & Parenthood",
+      title: "Couples & Family Planning",
       img: "https://i.pinimg.com/736x/52/08/b9/5208b9f29d6163bb20c66768a3e03969.jpg",
-      desc: "Astrology consultation for couples seeking family planning guidance.",
+      desc: "Astrology consultation for couples seeking clarity on family growth and life planning.",
     },
     {
-      title: "Special Puja & Mantras",
+      title: "Puja & Mantra Consultation",
       img: "https://i.pinimg.com/736x/43/8a/12/438a12dde5f045a8a6a4a25b1b1cccce.jpg",
-      desc: "Customized spiritual rituals and mantra-based consultations.",
+      desc: "Customized spiritual rituals and mantra-based consultations rooted in Vedic tradition.",
     },
   ];
 
@@ -84,7 +84,7 @@ export default function VashikaranGrid() {
               bg-clip-text text-transparent
             "
           >
-            Vashikaran & Spiritual Guidance
+            Vedic Astrology & Spiritual Guidance
           </h2>
           <p className="mt-4 font-inter text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
             Traditional astrology-based guidance offered across diverse

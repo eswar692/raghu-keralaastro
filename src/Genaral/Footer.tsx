@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import useInViewOnce from "./InView";
-import { phone_number, phone_number2 } from "./secret";
+import { phone_number } from "./secret";
 
 export default function Footer() {
   const [ref, inView] = useInViewOnce(0.2);
@@ -65,9 +65,7 @@ export default function Footer() {
           <p className="font-inter text-gray-300 text-sm mb-2">
             📞 {phone_number}
           </p>
-          <p className="font-inter text-gray-300 text-sm mb-4">
-            💬 {phone_number2}
-          </p>
+
           <p className="text-xs uppercase tracking-widest text-amber-300">
             Trusted • Confidential • Supportive
           </p>
@@ -114,13 +112,13 @@ export default function Footer() {
       <div className="relative z-10 border-t border-white/10 bg-black/70">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Credit */}
-          <a
+          {/* <a
             href="https://wa.me/918886921826"
             className="text-sm font-inter text-gray-400 hover:text-amber-400 transition"
           >
             Designed & Developed by{" "}
             <span className="font-semibold">Prasad</span>{" "}
-          </a>
+          </a> */}
 
           {/* Copyright */}
           <p className="text-xs font-inter text-gray-500">

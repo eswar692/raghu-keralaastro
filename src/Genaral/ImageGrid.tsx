@@ -6,14 +6,8 @@ const images = [
   "https://i.pinimg.com/1200x/3c/92/92/3c929254c1a0f88ef3ad9808780ffb46.jpg",
   "https://allproblemsolutionastro.com/images/Award-2.jpg",
   "https://allproblemsolutionastro.com/images/Award-3.jpg",
-  "https://i.pinimg.com/1200x/f1/eb/07/f1eb072e9930bb22bf9afc53fd9faf89.jpg",
-  "https://i.pinimg.com/1200x/fc/b1/54/fcb154019b1609ca4b057958eb44548d.jpg",
   "https://i.pinimg.com/736x/98/ca/10/98ca100ea8ed28b788462e82d21d67a9.jpg",
-  "https://i.pinimg.com/736x/34/1d/eb/341deb4d9ba9bd2934f0d996567b37a3.jpg",
-  "https://i.pinimg.com/736x/76/e5/5d/76e55d31c07ccdf60944be5e80878dd6.jpg",
-  "https://i.pinimg.com/736x/ea/17/c0/ea17c01906209a5448d9eaa6413f0f09.jpg",
   "https://i.pinimg.com/736x/9f/42/7a/9f427af8502ef53e4d07e7dbe922a14e.jpg",
-  "https://i.pinimg.com/736x/ba/38/4f/ba384fb8971c45251ee37b4aeff06372.jpg",
 ];
 
 const ImageGrid = () => {
@@ -40,7 +34,7 @@ const ImageGrid = () => {
               bg-clip-text text-transparent
             "
           >
-            Famous Vashikaran
+            Vedic Astrology & Spiritual Guidance
           </span>
 
           <span className="block mt-3 text-sm md:text-lg font-inter text-gray-300">

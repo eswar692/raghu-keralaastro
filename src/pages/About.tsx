@@ -61,22 +61,6 @@ export default function About() {
 
         {/* Divider */}
         <div className="my-20 h-px bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
-
-        {/* Gallery */}
-        <div>
-          <h2
-            className="
-              font-playfair font-bold
-              text-3xl md:text-5xl mb-10
-              bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500
-              bg-clip-text text-transparent
-            "
-          >
-            Gallery
-          </h2>
-
-          <ImageGrid />
-        </div>
       </div>
     </section>
   );
