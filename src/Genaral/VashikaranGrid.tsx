@@ -16,7 +16,7 @@ export default function VashikaranGrid() {
     },
     {
       title: "Emotional Bonding Guidance",
-      img: "https://i.pinimg.com/736x/d6/81/00/d68100dde806c12c6ccef9458435a94b.jpg",
+      img: "https://i.pinimg.com/736x/71/69/c1/7169c11939ba4145202f749536bd4f18.jpg",
       desc: "Vedic astrology guidance to strengthen emotional closeness and mutual understanding.",
     },
     {
@@ -60,8 +60,8 @@ export default function VashikaranGrid() {
       desc: "Astrology consultation for couples seeking clarity on family growth and life planning.",
     },
     {
-      title: "Puja & Mantra Consultation",
-      img: "https://i.pinimg.com/736x/43/8a/12/438a12dde5f045a8a6a4a25b1b1cccce.jpg",
+      title: "Puja & Spiritual Consultation",
+      img: "https://i.pinimg.com/736x/43/6e/7a/436e7a909c20f21ebaef9e58adae8060.jpg",
       desc: "Customized spiritual rituals and mantra-based consultations rooted in Vedic tradition.",
     },
   ];
