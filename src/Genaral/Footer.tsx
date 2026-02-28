@@ -7,7 +7,7 @@ export default function Footer() {
   const [ref, inView] = useInViewOnce(0.2);
 
   const services = [
-    "Vashikaran Guidance",
+    "Vedic Astrology Guidance",
     "Love & Relationship Consultation",
     "Astrology Readings",
     "Marriage & Family Advice",
